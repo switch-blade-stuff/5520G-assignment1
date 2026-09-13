@@ -26,12 +26,16 @@ public class App {
 				switch (s) {
 					case "+":
 						v = Binary.add(l, r);
+						break;
 					case "*":
 						v = Binary.mul(l, r);
+						break;
 					case "|":
 						v = Binary.or(l, r);
+						break;
 					case "&":
 						v = Binary.and(l, r);
+						break;
 				}
 				System.out.println(String.format("%s %s %s = %s", l.getValue(), s, r.getValue(), v.getValue()));
 			}
